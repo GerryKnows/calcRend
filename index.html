@@ -1,1 +1,76 @@
-Hola mundo!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabulador de Rendimientos</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <main class = "cosa">
+
+<div class="cosa_int">
+    <p class=" cosa_sim">
+        Simulador
+    </p>
+    <h3 class = "contenedor_titulo">
+        Descubre cuánto podrías ganar invirtiendo en ERA
+        </h3>     
+        
+            <p class = "cosa_parrafo_1">
+                
+              El rendimiento es proporcional al monto invertido,
+              por lo que entre más deposites lograrás más rápido
+              todo eso que te propones.
+
+            </p>
+
+            <p class = "cosa_txt_1"> 
+                Inversión
+            </p>
+            
+
+            <div class="cosa_capital">
+                <span>$</span>
+                <strong>
+                <input type="number" id="capital_input" >
+            </strong>
+            </div>
+            <input type="button" value="Quiero saber mi rendimiento" id="rendimiento"> 
+            
+            <div class = "monto">
+                <strong> <p class = "cosa_txt_1"> 
+                    Rendimiento por monto: <p id = "cosa_txt_2" > 0% </p> 
+                    </p> </strong>
+            </div>
+           
+            
+
+            <div class =" T_Invertido">
+                <p class = "cosa_txt_1" > <strong>Tiempo Invertido: </strong> </p>
+                <input type="button" value="  3  " id="b_uno invert"> 
+                <input type="button" value="  6  " id="b_dos invert"> 
+                <input type="button" value="  12  " id="b_tres invert"> 
+            </div>
+            
+            <div class ="con_era">
+                <p class = "cosa_txt_1 con_era--caja" > <strong> Con ERA obtendrías al final del plazo: </strong> </p>
+                <h1 id ="rend_total" >$0</h1>
+            </div>
+            <div class= "con_era--total">
+                <strong> <div id="inv_1"> $0</div> </strong>
+                 <div class="inv_2"> de tu inversión y</div>
+                <strong> <div id="gan_1"> $0</div> </strong>
+                 <div class="gan_2"> de ganancia </div>
+            </div>
+
+        
+       
+</div>
+<script src="/tabulador.js"></script>
+    </main>
+
+    
+</body>
+</html>

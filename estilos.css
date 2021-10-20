@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    }
+        
+    html {
+    font-size: 62.5%;
+    background-color: rgb(20, 20, 20);
+    }
+        
+    .container {
+    display:flex;
+    flex-wrap: wrap;
+    }
+    
+    .cosa {
+        display:flex;
+        height: 800px;
+        width: 400px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        border-radius: 15px;
+    }
+    .cosa_int {
+       
+        height: 730px;
+        width: 300px;
+        margin:auto;
+       
+    }
+    .cosa_sim {
+        color: #E7695F;
+        font-size: 1.9rem;
+        font-family: oswald,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    
+    }
+    
+    .contenedor_titulo {
+        color: #10273A;
+        font-size: 3rem;
+        font-family: oswald,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        line-height: 3rem;
+        margin-bottom: 20px;
+    }
+    
+    .cosa_parrafo_1 {
+    
+        color: #10273A;
+        font-size: 1.5rem;
+        font-family: avenir,Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 50px;
+    
+    }
+    
+    .monto{
+        display:flex;
+        margin-bottom: 40px;
+    }
+    .cosa_txt_1 {
+        display:inline-block;
+        color: #10273A;
+        font-size: 1.5rem;
+        font-family: avenir,Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #cosa_txt_2 {
+        display:inline-block;
+        color: #10273A;
+        font-size: 2rem;
+        font-family: oswald,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .cosa_capital {
+        display:flex;
+       justify-content: right;
+       align-items: center;
+        height: 40px;
+        width: 300px;
+        background-color: rgb(223, 223, 223);
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
+    
+    #capital_input {
+        width: 100px;
+        height: auto;
+        border: none;
+        outline: none;
+        background-color: rgba(223, 223, 223, 0);
+        color: #10273A;
+        font-size: 2rem;
+        font-family: oswald black,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+    }
+    
+    #rendimiento {
+        margin-bottom: 30px;
+    }
+    
+    #invert {
+        width: 30px;
+        height: 10px;
+    }
+    .con_era {
+        margin-top: 50px;
+        margin-bottom: 20px
+         
+    }
+    .con_era--caja{
+        width: 170px;
+    }
+    #rend_total {
+        margin-top: 20px;
+        text-align: center;
+        color: #D9202D;
+        font-size: 4rem;
+        font-family: oswald,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .con_era--total {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        ;
+    }
+    
+    #inv_1 {
+    
+        display:inline-block;
+        color: #10273A;
+        font-size: 3rem;
+        font-family: oswald,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    
+    }
+    
+    .inv_2 {
+    
+    display:inline-block;
+    color: #10273A;
+    font-size: 2rem;
+    font-family: avenir,Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    
+    #gan_1 {
+    
+        display:inline-block;
+        color: #10273A;
+        font-size: 3rem;
+        font-family: oswald,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    
+    }
+    
+    .gan_2 {
+    
+    display:inline-block;
+    color: #10273A;
+    font-size: 2rem;
+    font-family: avenir,Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    #b_uno {
+        border: 1px dotted #999;
+        border-radius: 0;
+      
+        -webkit-appearance: none;
+      }
