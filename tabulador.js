@@ -4,7 +4,23 @@
  var b = document.getElementById ("rendimiento");
  b.addEventListener("click", entregarRendimiento);
 
+ var MB = document.getElementById ("invert");
+ MB.addEventListener("click", entregarRendimiento);
+ 
+
  var c = document.getElementById("capital_input");
+ c.addEventListener("keydown", Enter);
+
+
+
+
+ function Enter (e) {
+  if (13 == e.keyCode) {
+    entregarRendimiento ();
+  }
+}
+
+
  
 
  
@@ -31,23 +47,59 @@
   }
 };
 
+function rendimientoPorCapital2(capital){
+  switch(true){
+    case capital >= 10000 && capital < 50000:
+      return 6;
+      break;
 
+    case capital >= 50000 && capital < 150000:
+      return 8;
+      break;
+
+    case capital >= 150000 && capital < 500000:
+      return 10;
+      break; 
+
+    case capital >= 500000:
+      return 12;
+      break;
+
+    default:
+      return 0;
+  }
+};
 
 function entregarRendimiento () 
 {
+  var meses = MB.value;
 var capital = parseFloat(c.value);
  var rendimiento = parseFloat(rendimientoPorCapital(capital));
+ var rendimiento2 = parseFloat(rendimientoPorCapital2(capital));
  var RM = (capital * rendimiento)  
  
- document.getElementById('cosa_txt_2').innerHTML = "  " + rendimiento + "%" ;
- document.getElementById('inv_1').innerHTML = "  $" + capital ;
- document.getElementById('gan_1').innerHTML = "  $" + parseFloat(RM * 3) ;
- document.getElementById('rend_total').innerHTML = "  $" + (parseFloat(RM * 3) + parseFloat(capital)) ;
+ document.getElementById('cosa_txt_2').innerHTML = "  " + rendimiento2 + "%" ;
+ document.getElementById('inv_1').innerHTML = "  $" + (capital.toLocaleString('en-US') );
+ document.getElementById('gan_1').innerHTML = "  $" + parseFloat(RM * meses).toLocaleString('en-US') ;
+ document.getElementById('mes_1').innerHTML = "  $" + parseFloat(RM).toLocaleString('en-US') ;
+
+ document.getElementById('rend_total').innerHTML = "  $" + (parseFloat(RM * 3) + parseFloat(capital)).toLocaleString('en-US') ;
  
 };
 
-//hay que generar un rendimiento del primer mes deacuerdo a la fecha ingresada
+/*
+-Agregarle comas a la separación de los numeros
+-Exportar como PDF tipo cotización
+-Agregar cuanto ganaria mensualmente  
+-Agregar media Queries
+-Hacer el signo de pesos mas grande                                                  (check!!)     
+-Que funcionen los meses
+-Generar en el input un evento de la tecla enter                                     (check!!)
+-Quitarle las decimales a el rendimiento
+-Estilos de los botones
 
+
+*/
 /* var capital = c.value;
  var rendimiento = rendimientoPorCapital(capital);
  var RM = (capital * rendimiento)  

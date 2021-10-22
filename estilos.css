@@ -95,7 +95,11 @@
     
     
     }
-    
+    .signo{
+        color: #10273A;
+        font-size: 2rem;
+        font-family: oswald black,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
     #rendimiento {
         margin-bottom: 30px;
     }
@@ -164,8 +168,26 @@
     color: #10273A;
     font-size: 2rem;
     font-family: avenir,Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #mes_1 {
+    
+        display:inline-block;
+        color: #10273A;
+        font-size: 3rem;
+        font-family: oswald,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
     
     }
+    
+    .mes_2 {
+    
+    display:inline-block;
+    color: #10273A;
+    font-size: 2rem;
+    font-family: avenir,Verdana, Geneva, Tahoma, sans-serif;
+    }
+
     #b_uno {
         border: 1px dotted #999;
         border-radius: 0;
