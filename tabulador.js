@@ -4,8 +4,9 @@
  var b = document.getElementById ("rendimiento");
  b.addEventListener("click", entregarRendimiento);
 
- var MB = document.getElementById ("invert");
- MB.addEventListener("click", entregarRendimiento);
+
+
+ 
  
 
  var c = document.getElementById("capital_input");
@@ -18,11 +19,23 @@
   if (13 == e.keyCode) {
     entregarRendimiento ();
   }
+
 }
 
-
+var MB3 = document.getElementById ("b_tres");
+  MB3.addEventListener("click", inver);
  
+  var MB6 = document.getElementById ("b_seis");
+  MB6.addEventListener("click", inver);
+ 
+  var MB12 = document.getElementById ("b_doce");
+  MB12.addEventListener("click", inver);
 
+
+function inver(w){
+  return w.path[0].value;
+  entregarRendimiento () 
+  }  
  
  function rendimientoPorCapital(capital){
   switch(true){
@@ -72,8 +85,8 @@ function rendimientoPorCapital2(capital){
 
 function entregarRendimiento () 
 {
-  var meses = MB.value;
-var capital = parseFloat(c.value);
+ var meses = inver(w);
+ var capital = parseFloat(c.value);
  var rendimiento = parseFloat(rendimientoPorCapital(capital));
  var rendimiento2 = parseFloat(rendimientoPorCapital2(capital));
  var RM = (capital * rendimiento)  
@@ -109,4 +122,3 @@ var capital = parseFloat(c.value);
       " y al final de 3 meses seria " + ("$" + (parseFloat(RM * 3) + parseFloat(capital))) + "  " + rendimiento );
       document.close();
       */
-     
