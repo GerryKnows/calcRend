@@ -4,16 +4,8 @@
  var b = document.getElementById ("rendimiento");
  b.addEventListener("click", entregarRendimiento);
 
-
-
- 
- 
-
  var c = document.getElementById("capital_input");
  c.addEventListener("keydown", Enter);
-
-
-
 
  function Enter (e) {
   if (13 == e.keyCode) {
@@ -34,7 +26,7 @@ var MB3 = document.getElementById ("b_tres");
 
 function inver(w){
   return w.path[0].value;
-  entregarRendimiento () 
+  
   }  
  
  function rendimientoPorCapital(capital){
