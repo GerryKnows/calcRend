@@ -1,19 +1,25 @@
 
 
 
- var b = document.getElementById ("rendimiento");
- b.addEventListener("click", entregarRendimiento);
+ // var b = document.getElementById ("rendimiento");
+ // b.addEventListener("click", entregarR);
 
  var c = document.getElementById("capital_input");
  c.addEventListener("keydown", Enter);
 
+function entregarR (){
+  inver();
+}
+
  function Enter (e) {
   if (13 == e.keyCode) {
+    inver();
     entregarRendimiento ();
   }
 
 }
 
+/*
 var MB3 = document.getElementById ("b_tres");
   MB3.addEventListener("click", inver);
  
@@ -22,11 +28,22 @@ var MB3 = document.getElementById ("b_tres");
  
   var MB12 = document.getElementById ("b_doce");
   MB12.addEventListener("click", inver);
+*/
 
+function inver(valor){
+  if (valor == undefined) {
+    inversion = 3; 
+    console.log(inversion);
+    
+  entregarRendimiento ();
+    
+  } else {
+    inversion = valor;
+    console.log(valor);
+    
+  entregarRendimiento ();
+  }
 
-function inver(w){
-  return w.path[0].value;
-  
   }  
  
  function rendimientoPorCapital(capital){
@@ -77,7 +94,8 @@ function rendimientoPorCapital2(capital){
 
 function entregarRendimiento () 
 {
- var meses = inver(w);
+  
+ var meses = inversion;
  var capital = parseFloat(c.value);
  var rendimiento = parseFloat(rendimientoPorCapital(capital));
  var rendimiento2 = parseFloat(rendimientoPorCapital2(capital));

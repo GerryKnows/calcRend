@@ -37,31 +37,43 @@
                 <input type="number" id="capital_input" >
             </strong>
             </div>
-            <input type="button" value="Quiero saber mi rendimiento" id="rendimiento"> 
+         <!-- <input type="button" value="Quiero saber mi rendimiento" id="rendimiento"> -->
             
             <div class = "monto">
-                <strong> <p class = "cosa_txt_1"> 
+                <p class = "cosa_txt_1"> 
                     Rendimiento por monto: <p id = "cosa_txt_2" > 0% </p> 
-                    </p> </strong>
+                    </p> 
             </div>
-           
+           <div class="mes_2--container">
+
+           </div>
+            <div class="mes_2"> mensualmente recibirás: </div>
+            <strong> <div id="mes_1"> $0</div> </strong>
+
             
 
-            <div class =" T_Invertido">
-                <p class = "cosa_txt_1" > <strong>Tiempo Invertido: </strong> </p>
-
-                
-                    <input type="button" value="3" id="b_tres"> 
-                    <input type="button" value="6" id="b_seis"> 
-                    <input type="button" value="12" id="b_doce"> 
-   
-                
-            </div>
+            
+            
             
             <div class ="con_era">
-                <p class = "cosa_txt_1 con_era--caja" > <strong> Con ERA obtendrías al final del plazo: </strong> </p>
+
+                <div class =" T_Invertido">
+
+                    <p class = "cosa_txt_1 con_era--caja" > <strong> Con ERA obtendrías al final del plazo: </strong> </p>
+                    
+                    <p class = "cosa_txt_1" > <strong>Tiempo Invertido: </strong> </p>
+    
+                        <input type="button" value="3"  onclick="inver(3)"   id="b_tres"> 
+                        <input type="button" value="6"  onclick="inver(6)"   id="b_seis"> 
+                        <input type="button" value="12" onclick="inver(12)"  id="b_doce"> 
+
+                </div>
                 <h1 id ="rend_total" >$0</h1>
+
             </div>
+
+            
+
             <div class= "con_era--total">
 
                 <strong> <div id="inv_1"> $0</div> </strong>
@@ -71,8 +83,7 @@
                  <div class="gan_2"> en 3 meses </div> 
                 
                 
-                 <strong> <div id="mes_1"> $0</div> </strong>
-                 <div class="mes_2"> mensual </div>
+                 
                 
                 </div>
                 
