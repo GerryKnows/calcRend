@@ -105,8 +105,8 @@ function entregarRendimiento ()
  document.getElementById('inv_1').innerHTML = "  $" + (capital.toLocaleString('en-US') );
  document.getElementById('gan_1').innerHTML = "  $" + parseFloat(RM * meses).toLocaleString('en-US') ;
  document.getElementById('mes_1').innerHTML = "  $" + parseFloat(RM).toLocaleString('en-US') ;
-
- document.getElementById('rend_total').innerHTML = "  $" + (parseFloat(RM * 3) + parseFloat(capital)).toLocaleString('en-US') ;
+ document.getElementById('rend_total').innerHTML = "  $" + (parseFloat(RM * meses) + parseFloat(capital)).toLocaleString('en-US') ;
+ document.getElementById('mese').innerHTML =  meses ;
  
 };
 
