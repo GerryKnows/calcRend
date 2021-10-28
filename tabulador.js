@@ -111,15 +111,15 @@ function entregarRendimiento ()
 };
 
 /*
--Agregarle comas a la separación de los numeros
+-Agregarle comas a la separación de los numeros                  (check!!) 
 -Exportar como PDF tipo cotización
--Agregar cuanto ganaria mensualmente  
+-Agregar cuanto ganaria mensualmente                             (check!!)
 -Agregar media Queries
--Hacer el signo de pesos mas grande                                                  (check!!)     
--Que funcionen los meses
--Generar en el input un evento de la tecla enter                                     (check!!)
--Quitarle las decimales a el rendimiento
--Estilos de los botones
+-Hacer el signo de pesos mas grande                              (check!!)     
+-Que funcionen los meses                                         (check!!)
+-Generar en el input un evento de la tecla enter                 (check!!)
+-Quitarle las decimales a el rendimiento                         (check!!)
+-Estilos de los botones  
 
 
 */
