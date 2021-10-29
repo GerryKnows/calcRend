@@ -1,0 +1,46 @@
+.cosa {
+    
+    width: 70%;
+    margin-top: 70px;
+    border-radius: 15px;
+    height: 650px;
+
+}
+
+.cosa_int {
+    display: flex;
+flex-wrap: wrap;
+    width: 80%;
+    height: 450px;
+
+}
+.contenedor1_cosa {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    
+}
+
+
+.cosa_parrafo_1 {
+    margin-bottom: 10px;
+}
+
+.contenedor2_cosa {
+    
+    width: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.con_era--total {
+   
+    width: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+}

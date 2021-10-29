@@ -9,72 +9,78 @@
     <link rel="stylesheet" href="./estilos.css">
     
     <link rel="stylesheet" href="./styles/tablet.css" media = "(min-width:450px)">
+    <link rel="stylesheet" href="./styles/laptop.css" media = "(min-width:1024px)">
 </head>
 <body>
     <main class = "cosa">
 
 <div class="cosa_int">
-    <p class=" cosa_sim">
-        Simulador
-    </p>
-    <h3 class = "contenedor_titulo">
-        Descubre cuánto podrías ganar invirtiendo en ERA
-        </h3>     
-        
-            <p class = "cosa_parrafo_1">
-                
-              El rendimiento es proporcional al monto invertido,
-              por lo que entre más deposites lograrás más rápido
-              todo eso que te propones.
 
-            </p>
+    <div class = "contenedor1_cosa">
+       <p class=" cosa_sim">
+            Simulador
+        </p>
+        <h3 class = "contenedor_titulo">
+            Descubre cuánto podrías ganar invirtiendo en ERA
+            </h3>     
+                <p class = "cosa_parrafo_1">
+                    
+                  El rendimiento es proporcional al monto invertido,
+                  por lo que entre más deposites lograrás más rápido
+                  todo eso que te propones.
+    
+                </p>
+    </div>
+    
 
-            <p class = "cosa_txt_1"> 
-                Inversión
-            </p>
-            
+    <div class ="contenedor2_cosa">
 
-            <div class="cosa_capital">
-                <span class="signo">$</span>
-                <strong>
-                <input type="number" id="capital_input" >
-            </strong>
-            </div>
-         <!-- <input type="button" value="Quiero saber mi rendimiento" id="rendimiento"> -->
-            
-            <div class = "monto">
                 <p class = "cosa_txt_1"> 
-                    Rendimiento por monto: <p id = "cosa_txt_2" > 0% </p> 
-                    </p> 
-            </div>
-           <div class="mes_2--container">
-
-           </div>
-            <div class="mes_2"> mensualmente recibirás: </div>
-            <strong> <div id="mes_1"> $0</div> </strong>
-
-            <div class ="con_era">
-
-                <div class =" T_Invertido">
-
-                    <p class = "cosa_txt_1" > <strong>Tiempo Invertido: </strong> </p>
+                    Inversión
+                </p>
+                
+    
+                <div class="cosa_capital">
+                    <span class="signo">$</span>
+                    <strong>
+                    <input type="number" id="capital_input" >
+                </strong>
                 </div>
-
-                <div class = "botones_container">
-                    <input type="button" value="3"  onclick="inver(3)"   id="b_tres"> 
-                    <input type="button" value="6"  onclick="inver(6)"   id="b_seis"> 
-                    <input type="button" value="12" onclick="inver(12)"  id="b_doce"> 
+             <!-- <input type="button" value="Quiero saber mi rendimiento" id="rendimiento"> -->
+                
+                <div class = "monto">
+                    <p class = "cosa_txt_1"> 
+                        Rendimiento por monto: <p id = "cosa_txt_2" > 0% </p> 
+                        </p> 
                 </div>
-
-                <p class = "cosa_txt_1 con_era--caja" > <strong> Con ERA obtendrías al final del plazo: </strong> </p>
-
-                <h1 id ="rend_total" >$0</h1>
-
-            </div>
-
+               <div class="mes_2--container">
+    
+               </div>
+                <div class="mes_2"> mensualmente recibirás: </div>
+                <strong> <div id="mes_1"> $0</div> </strong>
+    
+                <div class ="con_era">
+    
+                    <div class =" T_Invertido">
+    
+                        <p class = "cosa_txt_1" > <strong>Tiempo Invertido: </strong> </p>
+                    </div>
+    
+                    <div class = "botones_container">
+                        <input type="button" value="3"  onclick="inver(3)"   id="b_tres"> 
+                        <input type="button" value="6"  onclick="inver(6)"   id="b_seis"> 
+                        <input type="button" value="12" onclick="inver(12)"  id="b_doce"> 
+                    </div>
+                </div>
+    </div>
             
 
             <div class= "con_era--total">
+
+                <p class = "cosa_txt_1 con_era--caja" > 
+                    <strong> Con ERA obtendrías al final del plazo: </strong> </p>
+
+                <h1 id ="rend_total" >$0</h1>
 
                 <strong> <div id="inv_1"> $0</div> </strong>
                  <div class="inv_2"> de tu inversión, </div>
@@ -82,19 +88,10 @@
                 <strong> <div id="gan_1"> $0</div> </strong>
                 
                  <div class="gan_2"> en  <div id = "mese">3</div> meses </div> 
-                
-                
-                 
-                
-                </div>
-                
-                
-
-            
-
-        
-       
+                     
+            </div>     
 </div>
+
 <script src="./tabulador.js"></script>
     </main>
 
