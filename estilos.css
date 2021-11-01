@@ -16,9 +16,9 @@
     
     .cosa {
         display:flex;
-        height: 800px;
+        height: 900px;
         width: 100%;
-        background-color: white;
+        background-color: rgb(158, 116, 116);
         margin-left: auto;
         margin-right: auto;
        
@@ -255,7 +255,18 @@
         color: #c5c5c5;
       } 
 
-      
+      #btnCrearPdf {
+
+        height: 40px;
+        width: 110px;
+        border-radius: 20px;
+        margin-top: 20px;
+        background-color: #D9202D;
+        border: 0;
+        color: #fdf7f7;
+        font-family: avenir bold,Verdana, Geneva, Tahoma, sans-serif;
+
+      }
 
 
       #b_tres:hover {
