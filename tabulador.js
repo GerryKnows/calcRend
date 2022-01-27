@@ -139,6 +139,11 @@ document.addEventListener("DOMContentLoaded", () => {
           .save()
           .catch(err => console.log(err));
   });
+
+  html2pdf().set({
+    pagebreak: { mode: 'avoid-all', before: '#page2el' }
+  });
+
 });
 
 
